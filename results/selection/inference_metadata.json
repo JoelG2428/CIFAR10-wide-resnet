@@ -1,0 +1,28 @@
+{
+  "normalization": {
+    "mean": [
+      0.49182038185934096,
+      0.4826717584933278,
+      0.4471859824346404
+    ],
+    "std": [
+      0.2469060234169775,
+      0.24342744321249143,
+      0.2615407468942738
+    ],
+    "source_count": 45000
+  },
+  "class_names": [
+    "airplane",
+    "automobile",
+    "bird",
+    "cat",
+    "deer",
+    "dog",
+    "frog",
+    "horse",
+    "ship",
+    "truck"
+  ],
+  "strict_load_and_synthetic_inference": true
+}

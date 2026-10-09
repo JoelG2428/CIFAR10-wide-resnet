@@ -1,0 +1,33 @@
+{
+  "configuration": {
+    "architecture": "WRN-28-10",
+    "depth": 28,
+    "widen_factor": 10,
+    "dropout": 0.3,
+    "batch_size": 128,
+    "drop_last": false,
+    "epochs": 196,
+    "seed": 42,
+    "lr": 0.1,
+    "momentum": 0.9,
+    "nesterov": true,
+    "weight_decay": 0.0005,
+    "cosine_t_max": 200,
+    "eta_min": 0.0,
+    "augmentation": "REFLECT_CROP_FLIP_AUTOAUGMENT_CIFAR10_CUTOUT",
+    "cutout_length": 16,
+    "autoaugment": true,
+    "scheduler": "cosine_epoch",
+    "channels_last": true,
+    "cudnn_benchmark": true,
+    "deterministic": true,
+    "initialization": "Kaiming normal fan_in ReLU; BN ones/zeros; FC uniform +-1/sqrt(fan_in)",
+    "workers": 2,
+    "mixed_precision": false,
+    "official_test_enabled": false
+  },
+  "source": "wrn28_10_aa_cosine_200",
+  "best_validation_accuracy": 0.9728,
+  "fixed_final_epochs": 196,
+  "weights_transferred": false
+}

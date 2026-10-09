@@ -1,0 +1,61 @@
+{
+  "configuration": {
+    "architecture": "WRN-28-10",
+    "depth": 28,
+    "widen_factor": 10,
+    "dropout": 0.3,
+    "batch_size": 128,
+    "drop_last": false,
+    "epochs": 200,
+    "seed": 42,
+    "lr": 0.1,
+    "momentum": 0.9,
+    "nesterov": true,
+    "weight_decay": 0.0005,
+    "cosine_t_max": 200,
+    "eta_min": 0.0,
+    "augmentation": "REFLECT_CROP_FLIP_AUTOAUGMENT_CIFAR10_CUTOUT",
+    "cutout_length": 16,
+    "autoaugment": true,
+    "scheduler": "cosine_epoch",
+    "channels_last": true,
+    "cudnn_benchmark": true,
+    "deterministic": true,
+    "initialization": "Kaiming normal fan_in ReLU; BN ones/zeros; FC uniform +-1/sqrt(fan_in)",
+    "workers": 2,
+    "mixed_precision": false,
+    "official_test_enabled": false
+  },
+  "normalization": {
+    "mean": [
+      0.49182038185934096,
+      0.4826717584933278,
+      0.4471859824346404
+    ],
+    "std": [
+      0.2469060234169775,
+      0.24342744321249143,
+      0.2615407468942738
+    ],
+    "source_count": 45000
+  },
+  "class_names": [
+    "airplane",
+    "automobile",
+    "bird",
+    "cat",
+    "deer",
+    "dog",
+    "frog",
+    "horse",
+    "ship",
+    "truck"
+  ],
+  "split_sha256": "f6844ff952b949c20ac469132ba719c3cc2e62289b42ed8e3df00e563e5d0e8f",
+  "gpu": "NVIDIA RTX 4500 Ada Generation",
+  "gpu_total_mib": 22560.875,
+  "torch_version": "2.13.0+cu126",
+  "slurm_job": "415005",
+  "official_test_access": false,
+  "parameters": 36479194
+}
